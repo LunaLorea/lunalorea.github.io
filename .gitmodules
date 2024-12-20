@@ -1,0 +1,3 @@
+[submodule "vimjam"]
+	path = vimjam
+	url = git@github.com:LunaLorea/vimjam.git
