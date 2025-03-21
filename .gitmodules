@@ -1,3 +1,6 @@
 [submodule "vimjam"]
 	path = vimjam
 	url = git@github.com:LunaLorea/vimjam.git
+[submodule "bg-projekt-build"]
+	path = bg-projekt-build
+	url = git@github.com:LunaLorea/bg-projekt-build.git
