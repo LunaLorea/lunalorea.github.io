@@ -20,7 +20,7 @@ body {
     flex-direction: row;
     background-color: var(--light-base);
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 3%;
     height: 90%;
     width: 95%;
 }
@@ -67,17 +67,10 @@ h2 {
 
 @media (max-width: 900px) {
     .intro {
-        display: flex;
         flex-direction: column;
-        background-color: var(--light-base);
-        margin: auto;
-        margin-top: 5vh;
-        height: 90%;
-        width: 95%;
     }
     #title {
         left: 2rem;
-        top: 50%;
         -ms-transform: translate(0, -80%);
         transform: translate(0, -80%);   
     }
