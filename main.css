@@ -17,6 +17,7 @@ body {
 
 .intro {
     display: flex;
+    flex-direction: row;
     background-color: var(--light-base);
     margin: auto;
     margin-top: 5vh;
@@ -24,21 +25,25 @@ body {
     width: 95%;
 }
 
+
 #title {
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -80%);
     transform: translate(-50%, -80%);
     width: max-content;
 }
 
 #intro-left {
     width: 100%;
+    height: 100%;
+    min-width: max-content;
     position: relative;
 }
 #intro-right {
     width: 100%;
+    height: 100%;
     position: relative;
 }
 
@@ -58,4 +63,45 @@ h2 {
     font-style: normal;
     margin-bottom: 0rem;
     font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--light-base);
+        margin: auto;
+        margin-top: 5vh;
+        height: 90%;
+        width: 95%;
+    }
+    #title {
+        left: 2rem;
+        top: 50%;
+        -ms-transform: translate(0, -80%);
+        transform: translate(0, -80%);   
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #title {
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -80%);
+        transform: translate(-50%, -80%);
+    }
+
+    h1 {
+        font-size: 12vw;
+    }
+    h2 {
+        font-size: 7vw;
+    }
 }
